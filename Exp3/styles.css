@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+}
+.Regiform{
+    border-width: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 70px;
+    text-align: left;
+    font-family: Inter,sans serif;
+    font-size: 25px;
+}
+.Regiform h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+#regiform label{
+    font-weight: 600;
+    margin: 10px 40px 10px 0;
+    width: 150px;
+}
+#regiform{
+    display: flexbox;
+    flex-wrap: wrap;
+}
+#regiform input{
+    margin-left: auto;
+}
+#heading{
+    display: flex;
+    justify-content: center;
+}
+#submit-btn{
+    display: flex;
+    justify-content: center;
+}
+#submit-btn button{
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px;
+    transition: transform 0.2s ease;
+    
+}
+#submit-btn button:hover{
+    transform: translate(0px,-5px);
+    cursor: pointer;
+    background-color: #28a745;
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+input,textarea {
+    border: 2px solid;
+    border-radius: 4px;
+    width: max-content;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    resize: none;
+  }
+  textarea{
+    width: 64%;
+  }
+
+#regiform input:hover,
+#regiform textarea:hover {
+    border-color: #7d7d7d;
+}
+#regiform input:focus,
+
+#regiform textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+}
