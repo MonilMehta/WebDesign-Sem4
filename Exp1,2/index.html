@@ -6,38 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung Phone</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="maindiv">
     <div class="container">
         <nav id="navbar" class="nav">
             <div class="nav-wrapper">
-              <div class="logo">
-                <a href="#home"><img width="100px" height="auto" src="Samsung_Logo.svg"></a>
-              </div>
+                <div class="logo">
+                    <a href="#home"><img width="100px" height="auto" src="Samsung_Logo.svg"></a>
+                </div>
 
-              <ul id="menu">
-                <li class="nav-link"><a href="#home">Home</a></li>
-                <li class="nav-link"><a href="#services">Services</a></li>
-                <li class="nav-link"><a href="#about">About</a></li>
-                <li class="nav-link"><a href="#contact">Contact</a></li>
-              </ul>
+                <ul id="menu">
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#description">Description</a></li>
+                    <li class="nav-link"><a href="#spec">Specifications</a></li>
+                    <li class="nav-link"><a href="#buyNowButton">Buy Now</a></li>
+                </ul>
             </div>
-          </nav>
+        </nav>
         <header>
             <h1 class="title-name">Samsung Galaxy S24</h1>
         </header>
 
         <main>
-            <div class="product-details">
-                <img src="samsungs24.jpg" alt="Samsung Galaxy XYZ" class="product">
-                <section class="description">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <!-- Add more indicators as needed -->
+                </ol>
+                <div class="carousel-inner">
+                    <!-- Video Slide -->
+                    <div class="carousel-item active">
+                        <video class="d-block w-100" src="video.mp4" autoplay muted loop></video>
+                    </div>
+                    <!-- Image Slides -->
+                    <div class="carousel-item" id="ca2">
+                        <img class="d-block w-100 " src="Group-1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item" id="ca2">
+                        <img class="d-block w-100" src="Samsung-Galaxy-S24-Series.jpg" alt="Second slide">
+                    </div>
+                    <!-- Add more image slides as needed -->
+                    
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="product-details" id="home">
+                <section class="description" id="description">
                     <p>The Samsung Galaxy S24 is a cutting-edge smartphone that combines sleek design with powerful features.
                         With its 6.4 inches Super AMOLED display, octa-core Exynos XYZ processor, and stunning camera setup,
                         it delivers an exceptional mobile experience for users who demand performance and style.</p>
                 </section>
 
-                <section class="spec">
+                <section class="spec" id="spec">
                     <h2>Specifications</h2>
                     <ol>
                         <li><strong>Display:</strong> 172.5mm (6.8" full rectangle) / 172.2mm (6.8" rounded corners)</li>
@@ -57,6 +90,12 @@
             </div>
         </main>
     </div>
+</div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
