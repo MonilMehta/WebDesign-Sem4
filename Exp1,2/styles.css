@@ -1,24 +1,27 @@
 body,html{
     width: 100vw; 
+    color: black;
+    
 }
 .maindiv{
-    background-color:  rgb(195, 191, 238);
+    background-color:  #98ABEE;
 }
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    font-family: 'Zodiak', serif;
     margin: 0;
 }
 
 .nav {
-    background-color: rgb(10, 5, 61);
+    background-color: #201658;
     margin: 0;
     border-radius: 5px;
     padding: 10px;
     width: 100vw;
     box-sizing: border-box;
+    
 }
 
 .nav-wrapper {
@@ -41,12 +44,13 @@ body,html{
 
 .nav-link {
     margin: 0 10px;
-
+    
     /* background-color: ; */
 }
 .nav-link li a {
     margin: 0 10px;
     color: #000000;
+    
 }
 
 .nav-link li a :hover{
@@ -56,9 +60,9 @@ body,html{
 header {
     text-align: center;
     margin-top: 20px;
-    
-    font-style:oblique;
-    font-family : Inter,sans-serif;
+    color: black;
+    font-size: larger;
+    font-family: 'Zodiak', serif;
 }
 header h1{
     font-size: 50px;
@@ -82,7 +86,7 @@ header h1{
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #201658;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -90,6 +94,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 button:hover {
@@ -99,12 +104,98 @@ ol{
     list-style: none;
 }
 .carousel-inner{
-    min-height: 500px;
-    max-height: 600px;
-    margin-bottom: 100px;
+    /* min-height: 500px;
+    max-height: 600px; */
+    /* margin-bottom: 100px; */
     margin-top: 100px;
+    aspect-ratio: 16/9;
 }
 #ca2{
-    height: auto;
     object-fit: cover;
+    height: auto;
 }
+spec{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    
+}
+.card{
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #1D24CA;
+}
+
+.buyNowButton{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #201658;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
