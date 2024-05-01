@@ -10,6 +10,19 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400&display=swap" rel="stylesheet"> 
     <link href="https://api.fontshare.com/v2/css?f[]=zodiak@701&display=swap" rel="stylesheet"> 
+    <style>
+        .pricing-header {
+          margin-bottom: 40px; /* Adjust the spacing as needed */
+        }
+      
+        main {
+          margin-bottom: 60px; /* Adjust the spacing as needed */
+        }
+        .carrr{
+            width: 200px;
+            height: 200px;
+        }
+      </style>
 </head>
 
 <body>
@@ -32,7 +45,17 @@
         <header>
             <h1 class="title-name">Samsung Galaxy S24</h1>
         </header>
-
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+            <div class="col-md-6 p-lg-5 mx-auto my-5">
+              <h1 class="display-3 fw-bold">Designed for the Future</h1>
+              <h3 class="fw-normal text-muted mb-3">Build anything you want with Samsung</h3>
+              <div class="d-flex gap-3 justify-content-center lead fw-normal">
+                
+              </div>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+          </div>
         <main>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -183,16 +206,50 @@
                 
             </div>
         </main>
+            
     </div>
+    <h1 class="display-4 fw-normal text-body-emphasis pl-14">Pricing</h1>
 </div>
 
+<div class="row row-cols-1 row-cols-md-3 pl-2 pr-4 mb-3 text-center cccc">
+    
+<div class="col carrr">
+  <div class="card mb-4 rounded-3 shadow-sm">
+    <div class="card-header py-3">
+      <h4 class="my-0 fw-normal">Basic</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">$799<small class="text-body-secondary fw-light"></small></h1>
+      
+      
+    </div>
+  </div>
+</div>
+<div class="col carrr">
+  <div class="card mb-4 rounded-3 shadow-sm">
+    <div class="card-header py-3">
+      <h4 class="my-0 fw-normal">Pro</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">$999<small class="text-body-secondary fw-light"></small></h1>
+    </div>
+  </div>
+</div>
+<div class="col carrr">
+  <div class="card mb-4 rounded-3 shadow-sm border-primary">
+    <div class="card-header py-3 text-bg-primary border-primary">
+      <h4 class="my-0 fw-normal">Pro Plus</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">$1299<small class="text-body-secondary fw-light"></small></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+
 <footer class="footer">
-    <!-- <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
-    </div> -->
+
     <ul class="social-icon">
       <li class="social-icon__item"><a class="social-icon__link" href="#">
           <ion-icon name="logo-facebook"></ion-icon>
