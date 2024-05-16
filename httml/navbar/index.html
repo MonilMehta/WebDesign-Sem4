@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            border-radius: 40px;
+            margin-bottom: 100px;
+        }
+        nav:hover {
+            opacity: 1; /* Adjusted opacity */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .burger {
+            display: none;
+        }
+        @media screen and (max-width: 400px) {
+            ul {
+                flex-direction: column;
+            }
+            nav {
+                margin-left: 0;
+                display: none;
+            }
+            .burger {
+                display: block;
+            }
+        }
+        li {
+            padding: 10px;
+            color: aliceblue;
+            position: relative; /* Positioning for dropdown */
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+        }
+        /* Dropdown styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #121212;
+            min-width: 160px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            padding: 10px;
+            display: block;
+        }
+        li:hover .dropdown-content {
+            display: block;
+        }
+        .content{
+            width: 100vw;
+            height: 60vh;
+        }
+        .video {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button class="burger">≡</button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="service1.html">Service 1</a>
+                    <a href="service2.html">Service 2</a>
+                    <a href="service3.html">Service 3</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <iframe class="video"
+          src="https://www.youtube.com/embed/SWVPA1lMJQc"
+          title="Me Gustas tu - Manu Chao (cover)" frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+    </div>
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('nav');
+        burger.addEventListener('click', () => {
+            if (nav.style.display === 'none') {
+                nav.style.display = 'block';
+            } else {
+                nav.style.display = 'none';
+            }
+        });
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 400) {
+                nav.style.display = 'block';
+            } else {
+                nav.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

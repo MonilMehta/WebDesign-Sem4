@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    h1 {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    div {
+        margin: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input, button {
+        margin-bottom: 20px;
+      }
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+  <h1>Shopping Cart</h1>
+  <div id="items">
+    </div>
+  <div>
+    <label for="itemName">Item Name:</label>
+    <input type="text" id="itemName" required> <label for="itemPrice">Price:</label>
+    <input type="number" id="itemPrice" required>
+    <label for="itemQuantity">Quantity:</label>
+    <input type="number" id="itemQuantity" required>
+    <button onclick="addItem()">Add Item</button>
+  </div>
+  <div>
+    <label for="removeItemName">Item name to Remove:</label>
+    <input type="text" id="removeItemName">
+    <button onclick="removeItem()">Remove Item</button>
+  </div>
+  <button onclick="clearCart()">Clear Cart</button>
+   <script src="cart.js"></script> </body>
+</html>
